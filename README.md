@@ -14,6 +14,10 @@ The goal of this project was to collect reagent-effect data from across the titl
 * **Data Normalization:** Maps inconsistent and diverging effect names to a new, unified naming scheme.
 * **Intelligent Cleaning:** Distinguishes between reagents and effects while removing duplicates and ensuring proper formatting.
 
+## Tech Stack
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-4B0082?style=for-the-badge&logo=python&logoColor=white)
+
 ## Folder Structure
 
 ```md
