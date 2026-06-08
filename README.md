@@ -60,7 +60,7 @@ python main.py
 
 ## Detailed Overview
 
-For a step-by-step visualization of the full process see the [Alchemy Parser Pipeline Notebook](notebooks/tes_alchemy_parser_1.0_pipeline_overview.ipynb).
+For a step-by-step visualization of the full process see the [Alchemy Parser Pipeline Overview](notebooks/tes_alchemy_parser_1.0_pipeline_overview.ipynb).
 
 ## Disclaimer
 
