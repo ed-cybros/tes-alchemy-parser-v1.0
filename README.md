@@ -16,7 +16,7 @@ The goal of this project was to collect reagent-effect data from across the titl
 
 ## Tech Stack
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-4B0082?style=for-the-badge&logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-4B0082?style=for-the-badge&logo=python&logoColor=white)![Requests](https://img.shields.io/badge/requests-20232A?style=for-the-badge&logo=python&logoColor=white)
 
 ## Folder Structure
 
