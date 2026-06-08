@@ -1,46 +1,69 @@
-### **The Elder Scrolls Alchemy Effects Parser**
-A custom data-cleaning script created to process and unify alchemy reagent data scraped from the [Unofficial Elder Scrolls Pages](https://en.uesp.net/wiki/Lore:Alchemy_A), as part of a personal role-playing experience in The Elder Scrolls universe.
+# The Elder Scrolls Alchemy Effects Parser
 
-### **Features**
- * Scrapes all alchemy reagent pages from A–Z
- * Distinguishes reagent names from effect names
- * Normalizes effect names using a consistent naming scheme
- * Removes duplicates while maintaining the original order
+A Python-based data cleaning/transforming pipeline designed to scrape basic alchemy data (reagents and their effects) from the [Unofficial Elder Scrolls Pages (UESP)](https://en.uesp.net/wiki/Lore:Alchemy) and standardize inconsistent or synonymous effect names across multiple Elder Scrolls titles under a unified naming scheme.
 
-The output is a cleaner, unified list of effects per reagent.
-
-#### Example transformation:
-
-##### Input (raw):
-```text
-Aloe Vera Leaves
-    Heal Health
-    Heal Health
-    Restore Health
-    Restore Health
-    Restore Fatigue
-    Restore Health
-    Damage Magicka
-    Invisibility
-    Restore Health
-    Restore Stamina
-    Damage Magicka
-    Invisibility
-```
-##### Output (cleaned):
-```text
-Aloe Vera Leaves
-    Health Restoration
-    Fatigue Restoration
-    Magicka Damage
-    Invisibility
-    Stamina Restoration
-```
 ## Motivation
-Originally built for a richer and easier role-play experience for me and my friend. Together, we designed the naming convention for the alchemy related magical effects across all the games in the series. After that, I wrote the script to implement that.
 
-The .txt file with the end result is added, so if you are, too, a member of TES role-play community and have interest in alchemy, feel free to use it!
+Alchemy effects are represented differently across multiple Elder Scrolls game titles. This made practical use of cross-title alchemy data inconvenient and inefficient in a role-playing setting.
 
+The goal of this project was to collect reagent-effect data from across the titles and standardize effect names under a unified naming scheme while preserving the association between reagents and their effects.
+
+## Features
+
+* **Automated Scraping:** Aggregates reagent data from UESP (A–Z).
+* **Data Normalization:** Maps inconsistent and diverging effect names to a new, unified naming scheme.
+* **Intelligent Cleaning:** Distinguishes between reagents and effects while removing duplicates and ensuring proper formatting.
+
+## Folder Structure
+
+```md
+project_root/
+│ main.py                  # Runs the pipeline
+│ README.md
+│ data/                    # Stores intermediate and final text files
+│   ├ 01_parsed.txt
+│   ├ 02_renamed.txt
+│   └ 03_cleaned_(final).txt
+│ scripts/
+│   ├ script1_scrape.py
+│   ├ script2_replace.py
+│   └ script3_clean.py
+│ notebooks/
+│   └ alchemy_scraping_pipeline.ipynbsynonymous
+```
+
+## Requirements
+
+* Python 3.x
+* requests
+* beautifulsoup4
+
+## Install dependencies
+
+`pip install requests beautifulsoup4`
+
+## Usage
+
+Ensure `data/` folder exists.
+
+Run the main entry point to execute the full pipeline:
+
+```bash
+
+python main.py
+
+```
+
+## Detailed Overview
+
+For a step-by-step visualization of the full process see the [Alchemy Parser Pipeline Notebook](notebooks/alchemy_parser_pipeline.ipynb).
 
 ## Disclaimer
-This project is not actively maintained. The scripts were designed based on the UESP alchemy pages at the time of creation. New reagents or effects added to the website may not be captured or normalized correctly by the scripts.
+
+This project was made as part of a personal role-playing experience in The Elder Scrolls universe and is not actively maintained. New reagents or effects added to the website may not be captured or normalized correctly by the scripts.
+
+## Why 2.0 exists?
+
+Current project represents the first working implementation of the alchemy data collection pipeline. While it successfully scraped and standardized reagent-effect data, the final output was stored as a text file suitable mostly for manual lookup.
+
+These limitations later became one of the motivations behind the development of [The Elder Scrolls Alchemy Parser 2.0](https://github.com/ed-cybros/tes-alchemy-parser-v2.0), where the data was restructured using JSON and SQLite to provide more flexible lookup capabilities, while also placing special emphasis on data validation and integrity checks.
