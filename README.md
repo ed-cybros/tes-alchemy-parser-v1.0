@@ -1,6 +1,6 @@
 # The Elder Scrolls Alchemy Effects Parser
 
-A Python-based data cleaning/transforming pipeline designed to scrape basic alchemy data (reagents and their effects) from the [Unofficial Elder Scrolls Pages (UESP)](https://en.uesp.net/wiki/Lore:Alchemy) and standardize inconsistent or synonymous effect names across multiple Elder Scrolls titles under a unified naming scheme.
+A Python-based data cleaning/transforming pipeline designed to scrape basic alchemy data (reagents and their effects) from the [Unofficial Elder Scrolls Pages (UESP)](https://en.uesp.net/wiki/Lore:Alchemy) and standardize inconsistent or equivalent effect names across multiple Elder Scrolls titles under a unified naming scheme.
 
 ## Motivation
 
