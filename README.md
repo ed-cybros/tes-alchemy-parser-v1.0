@@ -70,4 +70,4 @@ This project was made as part of a personal role-playing experience in The Elder
 
 Current project represents the first working implementation of the alchemy data collection pipeline. While it successfully scraped and standardized reagent-effect data, the final output was stored as a text file suitable mostly for manual lookup.
 
-These limitations later became one of the motivations behind the development of [The Elder Scrolls Alchemy Parser 2.0](https://github.com/ed-cybros/tes-alchemy-parser-v2.0), where the data was restructured using JSON and SQLite to provide more flexible lookup capabilities, while also placing special emphasis on data validation and integrity checks.
+These limitations later became one of the motivations behind the development of [TES Alchemy Parser 2.0](https://github.com/ed-cybros/tes-alchemy-parser-v2.0), where the data was restructured using JSON and SQLite to provide more flexible lookup capabilities, while also placing special emphasis on data validation and integrity checks.
